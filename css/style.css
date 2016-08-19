@@ -1,0 +1,46 @@
+header .navbar {
+  margin-bottom: -40px; }
+header .navbar-default {
+  background: url(../img/wave1.png) 0 0 repeat-x;
+  position: relative;
+  min-height: 114px;
+  z-index: 40; }
+header .navbar-brand img {
+  left: 5%;
+  position: absolute;
+  top: 20px;
+  width: 100px; }
+header .navbar-toggle {
+  z-index: 3; }
+header .navbar-default .navbar-collapse,
+header .navbar-default .navbar-form {
+  background-color: #57343a;
+  border-color: #e7e7e7;
+  margin: 20% 0 0; }
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF; }
+header .navbar-default .navbar-nav > li > a:focus, header .navbar-default .navbar-nav > li > a:hover {
+  color: #FFF;
+  background-color: #d57e87; }
+header .navbar-default .navbar-nav > li > a {
+  color: #FFF; }
+header .navbar-default .navbar-toggle:focus, header .navbar-default .navbar-toggle:hover {
+  background-color: #d57e87; }
+
+.carousel .full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
+@media only screen and (min-width: 769px) {
+  header .navbar-brand img {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px; }
+  header .navbar-default .navbar-collapse,
+  header .navbar-default .navbar-form {
+    border-color: transparent;
+    margin: 0; } }
+
+/*# sourceMappingURL=style.css.map */
