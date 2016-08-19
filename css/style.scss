@@ -5,7 +5,7 @@ header {
 	}
     .navbar-default {
 		background: url(../img/wave1.png) 0 0 repeat-x;
-		position: relative;
+		position: fixed;
 		min-height: 114px;
 		z-index: 40;
     }
@@ -18,10 +18,13 @@ header {
     .navbar-toggle {
         z-index: 3;
     }
+    .navbar-default {
+        border-color: transparent;
+    }
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
     	background-color: #57343a;
-        border-color: #e7e7e7;
+        border-color: transparent;
         margin: 20% 0 0;
     }
 
@@ -43,6 +46,7 @@ header {
 }
 
 .carousel{
+    width: 100%;
 	.full-screen {
 	  background-size: cover;
 	  background-position: center;
@@ -61,8 +65,12 @@ header {
         }
         .navbar-default .navbar-collapse,
         .navbar-default .navbar-form {
-			border-color: transparent;
-            margin: 0;
+			margin: 0;
+        }
+
+        .navbar-right {
+            float: right !important;
+            margin-right: 0;
         }
     }
 }
