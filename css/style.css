@@ -51,6 +51,8 @@ header .navbar-default .navbar-nav > li > a {
 
 .separator2 {
   background: url(../img/w4.png) left top repeat-x;
+  background-color: #d57e87;
+  height: 26px;
   margin-top: -5px; }
 
 .services {
@@ -90,7 +92,7 @@ header .navbar-default .navbar-nav > li > a {
     position: relative;
     opacity: .65; }
     .banner .bgimg-1 p {
-      color: #d57e87;
+      color: #000000;
       font-size: 3em;
       font-weight: bolder;
       left: 0;
@@ -106,20 +108,33 @@ header .navbar-default .navbar-nav > li > a {
 
 .contato {
   background-color: #d57e87;
-  margin-top: -5px; }
+  margin: -5px 0 0 0; }
   .contato h2 {
     color: #ffffff;
     font-size: 3em;
     font-weight: bold;
     text-align: center; }
   .contato .contact {
-    margin-top: 36px; }
+    margin: 36px 0; }
+    .contato .contact .contact-map {
+      border-right: solid 3px #ffffff; }
     .contato .contact address {
       font-style: italic;
-      text-align: center;
       padding-top: 20px; }
       .contato .contact address p {
-        color: #ffffff; }
+        color: #ffffff;
+        padding-left: 20px; }
+
+footer {
+  background-color: #222222;
+  text-align: center;
+  padding-top: 20px; }
+  footer .row {
+    margin-right: 0; }
+  footer .social i {
+    font-size: 25px;
+    padding: 0 25px;
+    margin: 0 auto; }
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
 @media only screen and (min-width: 768px) {
