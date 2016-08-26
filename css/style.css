@@ -78,17 +78,51 @@ header .navbar-default .navbar-nav > li > a {
       z-index: 1; }
 
 .banner {
-  background-image: url(../img/banner.png);
-  height: auto; }
-  .banner h2, .banner p {
+  border-bottom: solid 5px #C94452;
+  height: 100%; }
+  .banner .bgimg-1 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/banner.png);
+    height: 300px;
+    position: relative;
+    opacity: .65; }
+    .banner .bgimg-1 p {
+      color: #d57e87;
+      font-size: 3em;
+      font-weight: bolder;
+      left: 0;
+      line-height: 1.5em;
+      position: absolute;
+      top: 20%;
+      text-align: center;
+      text-shadow: 1px 1px #000;
+      width: 100%; }
+
+.more-photos {
+  background-color: #E5E1DA; }
+
+.contato {
+  background-color: #d57e87;
+  margin-top: -5px; }
+  .contato h2 {
     color: #ffffff;
+    font-size: 3em;
     font-weight: bold;
-    padding: 30px 0;
-    text-align: center;
-    text-shadow: 2px 2px #000000; }
+    text-align: center; }
+  .contato .contact {
+    margin-top: 36px; }
+    .contato .contact address {
+      font-style: italic;
+      text-align: center;
+      padding-top: 20px; }
+      .contato .contact address p {
+        color: #ffffff; }
 
 /* Layout para desktops: 769 px ate o maximo de 1232 px. Herda estilos de: Layout para celulares e Layout para tablets. */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   header .navbar-brand img {
     left: 50%;
     transform: translateX(-25%);
