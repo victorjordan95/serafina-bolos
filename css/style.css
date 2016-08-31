@@ -18,9 +18,10 @@ header .navbar-default {
   min-height: 114px;
   z-index: 40; }
 header .navbar-brand img {
-  left: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   position: absolute;
-  top: 20px;
+  top: 40px;
   width: 100px; }
 header .navbar-toggle {
   z-index: 3; }
@@ -175,7 +176,7 @@ footer {
   header .navbar-default .navbar-nav > li > a:focus, header .navbar-default .navbar-nav > li > a {
     font-family: 'Lobster', sans-serif;
     font-size: 2em;
-    padding: 5px 80px; }
+    margin: 20px 80px 0 50px; }
     header .navbar-default .navbar-nav > li > a:focus:hover, header .navbar-default .navbar-nav > li > a:hover {
       color: #FFC3C9;
       border-bottom: 2px solid #FFC3C9;
