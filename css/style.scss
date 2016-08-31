@@ -2,11 +2,16 @@
 
 p {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
     line-height: 2em;
 }
 
 a,h1,h2,h3 {
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
 }
 
 header {
@@ -83,6 +88,7 @@ header {
     background-color: #E5E1DA;
     margin-bottom: 5px;
     p {
+        margin-top: 36px;
         margin-bottom: 22px;
     }
 }
@@ -131,7 +137,7 @@ header {
             left: 0;
             line-height: 1.5em;
             position: absolute;
-            top: 20%;
+            top: 5%;
             text-align: center;
             text-shadow: 1px 1px #000;
             width: 100%;
@@ -155,16 +161,15 @@ header {
         text-align: center;
     }
     .contact{
-        margin: 36px 0;
         .contact-map{
-            border-right: solid 3px #ffffff;
+            iframe{
+                width: 100%;
+            }
         }
         address{
             font-style: italic;
-            padding-top: 20px;
             p {
                 color: #ffffff;
-                padding-left: 20px;
             }
         }
     }
@@ -179,7 +184,8 @@ footer {
     text-align: center;
     padding-top: 20px;
     .social {
-        i {
+        i { 
+            color: #D57E87;
             font-size: 25px;
             padding: 0 25px;
             margin: 0 auto;
@@ -213,7 +219,32 @@ footer {
             margin-top: 25px;
         }
     }
+
+        .cute-img{
+            transform: translateX(50%);
+            width: 220px;
+        }
+
+    .banner{
+        .bgimg-1 {
+            p {
+                top: 20%;
+            }
+        }
+    }
+    .contato{
+        .contact-map{
+            border-right: solid 3px #ffffff;
+        }
+        address{
+           p {
+                padding-left: 20px;
+            }
+        }
+    }
+    
 }
+
 
 @media only screen and (min-width: 1200px) {
     header {

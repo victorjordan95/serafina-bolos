@@ -1,10 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Lobster|Roboto";
 p {
   font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
   line-height: 2em; }
 
 a, h1, h2, h3 {
   font-family: 'Roboto', sans-serif; }
+
+h2 {
+  font-size: 2.5em; }
 
 header .navbar {
   margin-bottom: -40px; }
@@ -59,6 +63,7 @@ header .navbar-default .navbar-nav > li > a {
   background-color: #E5E1DA;
   margin-bottom: 5px; }
   .services p {
+    margin-top: 36px;
     margin-bottom: 22px; }
 
 .gallery {
@@ -98,7 +103,7 @@ header .navbar-default .navbar-nav > li > a {
       left: 0;
       line-height: 1.5em;
       position: absolute;
-      top: 20%;
+      top: 5%;
       text-align: center;
       text-shadow: 1px 1px #000;
       width: 100%; }
@@ -114,16 +119,12 @@ header .navbar-default .navbar-nav > li > a {
     font-size: 3em;
     font-weight: bold;
     text-align: center; }
-  .contato .contact {
-    margin: 36px 0; }
-    .contato .contact .contact-map {
-      border-right: solid 3px #ffffff; }
-    .contato .contact address {
-      font-style: italic;
-      padding-top: 20px; }
-      .contato .contact address p {
-        color: #ffffff;
-        padding-left: 20px; }
+  .contato .contact .contact-map iframe {
+    width: 100%; }
+  .contato .contact address {
+    font-style: italic; }
+    .contato .contact address p {
+      color: #ffffff; }
 
 footer {
   background-color: #222222;
@@ -132,6 +133,7 @@ footer {
   footer .row {
     margin-right: 0; }
   footer .social i {
+    color: #D57E87;
     font-size: 25px;
     padding: 0 25px;
     margin: 0 auto; }
@@ -152,7 +154,19 @@ footer {
     font-family: 'Lobster', sans-serif;
     font-size: 1.8em;
     padding: 0px 80px;
-    margin-top: 25px; } }
+    margin-top: 25px; }
+
+  .cute-img {
+    transform: translateX(50%);
+    width: 220px; }
+
+  .banner .bgimg-1 p {
+    top: 20%; }
+
+  .contato .contact-map {
+    border-right: solid 3px #ffffff; }
+  .contato address p {
+    padding-left: 20px; } }
 @media only screen and (min-width: 1200px) {
   header .navbar-brand img {
     left: 50%;
