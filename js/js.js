@@ -24,6 +24,7 @@ $('.carousel').carousel({
   pause: "false"
 });
 
+
 $(document).ready(function () {
   function filterPath(string) {
     return string
@@ -31,10 +32,8 @@ $(document).ready(function () {
     .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
     .replace(/\/$/, '');
           }
-    $('a[href*=#]').each(function () {
-      if (filterPath(location.pathname) == filterPath(this.pathname)
-          && location.hostname == this.hostname
-          && this.hash.replace(/#/, '')) {
+    $('.slide-menu').each(function () {
+      if (filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
             var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
             var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
               if ($target) {
@@ -49,3 +48,5 @@ $(document).ready(function () {
       }
   });
 });
+
+
